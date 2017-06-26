@@ -1,0 +1,89 @@
+
+<div class="container">
+  <div class="left">
+    <div class="left-box">
+      <div class="flag flag-left" 
+          [ngStyle]="{'background-image': 'url(./assets/' + currentCountryLeft.name + '.svg)', 'background-size': 'cover', 'background-position': 'center center'}"
+          ></div>
+      <div class="subTitle-left">{{currentCountryLeft.sub}}</div>
+      <div class="left-title">
+        {{currentCountryLeft.code}}
+      </div>
+      <div class="left-amount" *ngIf="!editLeft" (click)="clickToEdit()" >
+        ${{leftPrice | number : '1.2-2'}}
+      </div>
+      <div class="left-amount" *ngIf="editLeft">
+        <input type="number" name="left-input" value="" placeholder="${{leftPrice | number : '1.2-2'}}">
+        <i class="material-icons checkMark" (click)="clickToEdit()">check</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="buy-sell-tab">
+    <table>
+      <tr>
+        <td class="option" 
+            (click)="activate()"
+            [class.active]="buy"
+            >BUY</td>
+        <td class="option" 
+            (click)="activate()"
+            [class.active]="sell"
+            >SELL</td>
+      </tr>
+    </table>
+  </div>
+  <div class="right-box" *ngIf="showRightAmount"  >
+    <div class="right-amount"
+         *ngIf="!editRight"
+         (click)="clickToEditRight()"
+          >
+      ${{rightPrice | number : '1.2-2'}}
+    </div>
+    <div class="right-amount" *ngIf="editRight">
+        <input type="number" name="right-input" value="" placeholder="${{rightPrice | number : '1.2-2'}}">
+        <i class="material-icons checkMark-r" (click)="clickToEditRight()">check</i>
+      </div>
+
+    <div class="right-title"
+         (click)="showCountryList()" 
+         *ngIf="showRightAmount"
+          >
+      {{currentCountryRight.code}}
+    </div>
+    <div class="subTitle-right"
+         *ngIf="showRightAmount" 
+         (click)="showCountryList()"
+          >{{currentCountryRight.sub}}
+    </div>
+    <div *ngIf="showRightAmount" 
+         class="flag flag-right"
+         [ngStyle]="{'background-image': 'url(./assets/' + currentCountryRight.name + '.svg)', 'background-size': 'cover', 'background-position': 'center center'}"
+         (click)="showCountryList()"></div>
+  </div>
+
+  <div class="right-box-scroll" 
+       *ngIf="!showRightAmount"
+       (click)="showCountryList()" 
+       >
+
+       <div class="country-card" 
+            *ngFor="let country of countryList; let i = index;"
+            (click)="selectCountry(i)" 
+            >
+        <div class="right-title">{{country.code}}</div>
+        <div class="subTitle-in">{{country.sub}}</div>
+        <div class="flag"
+             [ngStyle]="{'background-image': 'url(./assets/' + country.name + '.svg)', 'background-size': 'cover', 'background-position': 'center center'}" 
+              ></div>
+       </div>
+  </div> 
+
+  
+  <app-float-btn [icon]="icon" (click)="convert()"></app-float-btn>
+</div>
+
+
+
+
+

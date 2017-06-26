@@ -1,0 +1,29 @@
+.right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  z-index: 10;
+}
+
+:host(.left) {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 10;
+}
+
+:host(.middle) {
+  position: fixed;
+  bottom: 20px;
+  left: 182px;
+  color: white;
+  z-index: 10;
+}
+
+.mat-fab {
+    /*background-color: #363347;*/
+    background-color: #e0cda9;
+    color: #5f6078;
+}

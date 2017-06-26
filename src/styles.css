@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~https://fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto|Open+Sans+Condensed:300|Wire+One';
+
+html {
+    height: 100%;
+    overflow: hidden; 
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    user-select: none;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #5f6078;
+    min-height: 100%;
+    margin: 0;
+    font-family: Lato, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden; 
+}

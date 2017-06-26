@@ -1,0 +1,219 @@
+.left-box{
+    height: 40vh;
+    /*background-color: white;*/
+    width: 32%;
+    color: #5f6078;
+    position: absolute;
+    top: 58px;
+    left: 200px;
+    font-size: 100px;
+    text-align: left;
+    
+    /*font-family: 'Advent Pro', sans-serif;*/
+    font-family: 'Wire One', sans-serif;
+    
+}
+
+.checkMark{
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    font-size: 45px;
+}
+
+.checkMark-r{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    font-size: 45px;
+}
+
+
+
+.left-amount{
+    border-bottom: 3px solid #5f6078;
+}
+
+.left-amount input{
+    background-color: #e0cda9;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    width: 90%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.right-amount input{
+    color: #e0cda9;
+    background-color: #5f6078;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    width: 90%;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.right-box{
+    z-index: 10;
+    height: 40vh;
+    /*background-color: white;*/
+    width: 29.4%;
+    color: #e0cda9;
+    position: fixed;
+    bottom: 163px;
+    right: 200px;
+    font-size: 100px;
+    text-align: right;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    /*font-family: 'Advent Pro', sans-serif;*/
+    font-family: 'Wire One', sans-serif;
+}
+
+.country-card{
+    height: 15vh;
+}
+
+.flag{
+    height: 10vh;
+    width: 16vh;
+    position: relative;
+    left: 46px;
+    bottom: 142px;
+    background-image: url('http://via.placeholder.com/122.8x76.7/e0cda9/flag');
+    
+}
+
+.flag-right{
+    bottom: 108px;
+}
+
+.flag-left{
+    position: relative;
+    top: 136px;
+    left: 130px;
+    background-image: url('http://via.placeholder.com/122.8x76.7/5f6078/flag');
+}
+
+.right-box-scroll{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 10;
+    height: 80vh;
+    /*background-color: darkgray;*/
+    width: 29.4%;
+    /*color: #e0cda9;*/
+    color: #B8AA94;
+    position: fixed;
+    bottom: 35px;
+    right: 200px;
+    font-size: 100px;
+    text-align: right;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+    /*font-family: 'Advent Pro', sans-serif;*/
+    font-family: 'Wire One', sans-serif;
+}
+
+.left-title{
+    font-size: 150px;
+
+}
+
+.right-title{
+    font-size: 150px;
+    margin-top: 23px;
+}
+
+.right-amount{
+    border-bottom: 3px solid #e0cda9;
+
+}
+
+.option{
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+    
+}
+
+.subTitle-left{
+    font-size: 24px;
+    position: absolute;
+    top: 96px;
+    left: 130px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.subTitle-in{
+    font-size: 24px;
+    position: relative;
+    bottom: 144px;
+    right: 130px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.subTitle-right{
+    font-size: 24px;
+    position: absolute;
+    top: 154px;
+    right: 131px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.active{
+    border-bottom: 4px solid #e0cda9;
+}
+
+.buy-sell-tab{
+    
+    color: #e0cda9;
+    font-family: 'Ubuntu Mono', monospace;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+md-icon.mat-icon.material-icons {
+    color: red;
+}
+
+.bg{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+.left{
+    background-color: #e0cda9;
+    height: 100%;
+    width: 54%;
+
+    clip-path: polygon(
+    0 0, /* left top */
+    100% 0, /* right top */ 
+    90% 100%, /* right bottom */
+    0 100% /* left bottom */
+  );
+}
+
+/*.left::after{
+    position:absolute;
+    content: " ";
+    display:block;
+    left:-5%;
+    bottom:-10px;
+    transform:rotate(6deg);
+    width:110%;
+    background-color: #e0cda9;
+    
+}*/
